@@ -1,9 +1,7 @@
 <template>
   <div class="flex flex-col">
     <div class="lg:relative bg-white">
-      <div
-        class="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left"
-      >
+      <div class="mx-auto w-full max-w-7xl pt-16 text-center lg:text-left">
         <div class="px-6 sm:px-8 lg:w-1/2 xl:pr-16">
           <h1
             class="text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
@@ -41,8 +39,9 @@
           </div>
         </div>
       </div>
+
       <div
-        class="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2"
+        class="mt-5 lg:mt-0 relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2"
       >
         <img
           class="absolute inset-0 h-full w-full object-cover"
@@ -50,6 +49,13 @@
           alt=""
         />
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
+        <path
+          fill="#dc2626"
+          fill-opacity="1"
+          d="M0,96L40,122.7C80,149,160,203,240,208C320,213,400,171,480,154.7C560,139,640,149,720,138.7C800,128,880,96,960,85.3C1040,75,1120,85,1200,80C1280,75,1360,53,1400,42.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
     </div>
 
     <TripleCard />
