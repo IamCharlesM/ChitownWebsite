@@ -82,7 +82,11 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/vue";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
+import {
+  Bars3Icon,
+  BellIcon,
+  XMarkIcon,
+} from "@heroicons/vue/outline/index.js";
 
 const navigation = [
   { name: "home", href: "/", current: true },
