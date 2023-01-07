@@ -59,6 +59,9 @@
     </div>
 
     <TripleCard />
-    <CallToAction />
+    <CallToAction
+      class="hover:animate__bounceInDown animate__bounceInDown"
+      appear
+    />
   </div>
 </template>

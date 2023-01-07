@@ -53,19 +53,19 @@
 
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
-        <DisclosureButton
-          v-for="item in navigation"
-          :key="item.name"
-          as="a"
-          :href="item.href"
-          :class="[
-            item.current
-              ? 'bg-red-600 text-white'
-              : 'text-black hover:bg-red-700 hover:text-white',
-            'block px-3 py-2 rounded-md text-base font-medium',
-          ]"
-          :aria-current="item.current ? 'page' : undefined"
-          >{{ item.name }}</DisclosureButton
+        <span v-for="item in navigation" :key="item.name"
+          ><NuxtLink
+            :to="item.href"
+            :class="[
+              item.current
+                ? 'bg-red-600 text-white'
+                : 'text-black hover:bg-red-700 hover:text-white',
+              'block px-3 py-2 rounded-md text-base font-medium',
+            ]"
+            :aria-current="item.current ? 'page' : undefined"
+          >
+            {{ item.name }}
+          </NuxtLink></span
         >
       </div>
     </DisclosurePanel>
@@ -88,7 +88,15 @@ const navigation = [
   { name: "home", href: "/", current: true },
   { name: "Mission", href: "/mission", current: false },
   { name: "Contact Us", href: "/contact", current: false },
-  { name: "Schedule", href: "#", current: false },
-  { name: "Events", href: "#", current: false },
+  {
+    name: "Schedule",
+    href: "https://www.gomotionapp.com/team/ilcc/page/class-registration",
+    current: false,
+  },
+  {
+    name: "Events",
+    href: "https://www.gomotionapp.com/team/ilcc/page/calendar#/team-events/upcoming",
+    current: false,
+  },
 ];
 </script>
