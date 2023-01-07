@@ -62,6 +62,7 @@
               <a
                 v-for="item in navigation"
                 :key="item.name"
+                :target="item.target"
                 :href="item.href"
                 :class="[
                   item.current
@@ -119,18 +120,20 @@ import {
 // } from "@heroicons/vue/outline/index.js";
 
 const navigation = [
-  { name: "home", href: "/", current: true },
-  { name: "Mission", href: "/mission", current: false },
-  { name: "Contact Us", href: "/contact", current: false },
+  { name: "home", href: "/", target: "", current: true },
+  { name: "Mission", href: "/mission", target: "", current: false },
+  { name: "Contact Us", href: "/contact", target: "", current: false },
   {
     name: "Schedule",
     href: "https://www.gomotionapp.com/team/ilcc/page/class-registration",
     current: false,
+    target: "_blank",
   },
   {
     name: "Events",
     href: "https://www.gomotionapp.com/team/ilcc/page/calendar#/team-events/upcoming",
     current: false,
+    target: "_blank",
   },
 ];
 </script>
