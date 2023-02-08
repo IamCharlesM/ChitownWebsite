@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-600">
+  <div class="bg-red-600 overflow-x-clip">
     <Navbar />
     <slot />
     <Footer />
