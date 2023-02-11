@@ -2,57 +2,16 @@
   <div
     class="flex flex-col lg:flex-row space-y-4 md:space-y-0 justify-evenly max-w-7xl md:space-x-4 mx-auto my-5 text-white"
   >
-    <div class="divide-y divide-gray-200 overflow-hidden rounded-lg shadow">
-      <div class="px-4 py-5 sm:px-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </div>
-      <div class="px-4 py-5 sm:p-6">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ut
-        perferendis, sit numquam architecto sequi repudiandae quibusdam natus
-        assumenda iusto cum? Quisquam rerum velit non reprehenderit quis cumque
-        quam quasi.
-      </div>
-    </div>
-
-    <div class="divider lg:divider-horizontal"></div>
-
-    <div class="divide-y divide-gray-200 overflow-hidden rounded-lg shadow">
-      <div class="px-4 py-5 sm:px-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </div>
-      <div class="px-4 py-5 sm:p-6">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ut
-        perferendis, sit numquam architecto sequi repudiandae quibusdam natus
-        assumenda iusto cum? Quisquam rerum velit non reprehenderit quis cumque
-        quam quasi.
-      </div>
-    </div>
-
-    <div class="divider lg:divider-horizontal"></div>
-
-    <div class="divide-y divide-gray-200 overflow-hidden rounded-lg shadow">
-      <div class="px-4 py-5 sm:px-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </div>
-      <div class="px-4 py-5 sm:p-6">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ut
-        perferendis, sit numquam architecto sequi repudiandae quibusdam natus
-        assumenda iusto cum? Quisquam rerum velit non reprehenderit quis cumque
-        quam quasi.
-      </div>
-    </div>
-
-    <div class="divider lg:divider-horizontal"></div>
-
-    <div class="divide-y divide-gray-200 overflow-hidden rounded-lg shadow">
-      <div class="px-4 py-5 sm:px-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </div>
-      <div class="px-4 py-5 sm:p-6">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ut
-        perferendis, sit numquam architecto sequi repudiandae quibusdam natus
-        assumenda iusto cum? Quisquam rerum velit non reprehenderit quis cumque
-        quam quasi.
+    <div class="card w-96 bg-white shadow-md image-full">
+      <figure>
+        <img src="@/assets/roger-back.jpg" alt="Shoes" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
       </div>
     </div>
   </div>

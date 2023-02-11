@@ -5,7 +5,7 @@
   <p class="mb-5 lg:text-xl">
     {{ bodyText }}
   </p>
-  <button class="btn btn-primary btn-wide">{{ buttonText }}</button>
+  <button class="btn btn-primary btn-wide normal-case">{{ buttonText }}</button>
 </template>
 
 <script setup>

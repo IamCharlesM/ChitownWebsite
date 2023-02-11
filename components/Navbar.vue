@@ -46,7 +46,7 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <a class="btn">Get started</a>
+      <a class="btn btn-ghost normal-case">Register</a>
     </div>
   </div>
 </template>

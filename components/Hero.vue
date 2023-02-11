@@ -27,7 +27,7 @@
           class=""
           :titleText="'Chitown Champions'"
           :bodyText="'Affectionately known as a Leadership Program disguised as a Tumbling Team, our mission is to use the fun of tumbling &amp; the focus of competition as catalysts to empower and develop tomorrow\'s leaders.  Positive Coaching & Mentoring are our foundation.'"
-          :buttonText="'Get Started'"
+          :buttonText="'Register'"
         />
       </div>
     </div>

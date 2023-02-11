@@ -3,11 +3,8 @@
     <Hero :videoBG="true" class="" />
     <TripleCard />
     <div class="max-h-72 bg-transparent"></div>
-    <CallToAction
-      class="hover:animate__bounceInDown animate__bounceInDown"
-      appear
-    />
-
-    <CallToActionV2 />
+    <div class="w-screen h-screen bg-white">
+      <CallToAction />
+    </div>
   </div>
 </template>
