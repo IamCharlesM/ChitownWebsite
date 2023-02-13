@@ -14,12 +14,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.hero {
-  border-radius: 0.75rem !important;
-}
-.hero-overlay {
-  border-radius: 0.75rem !important;
-}
-</style>
