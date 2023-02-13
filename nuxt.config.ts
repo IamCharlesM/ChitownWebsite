@@ -1,6 +1,9 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", '@nuxt/image-edge'],
+    build: {
+    transpile: ['gsap'],
+  },
   postcss: {
     plugins: {
       autoprefixer: {},
@@ -16,7 +19,7 @@ app: {
             {
         hid: 'description',
         name: 'description',
-        content: 'WIP Demo Site '
+        content: 'Chitown Champions'
       }
     ],
     link: [

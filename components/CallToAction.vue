@@ -1,28 +1,74 @@
 <template>
-  <div
-    class="grid grid-rows-6 grid-flow-col gap-1 mx-auto my-5 max-w-full min-h-screen"
+  <ul
+    role="list"
+    class="w-screen container max-w-[1824px] mx-auto grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
   >
-    <div
-      class="col-span-3 row-span-3 bg-black bg-cover bg-bottom"
-      style="background-image: url('/_nuxt/assets/roger-back.jpg')"
-    >
-      <div>01</div>
-    </div>
-    <div
-      class="row-span-2 bg-black bg-cover"
-      style="background-image: url('/_nuxt/assets/tiff-back.jpg')"
-    >
-      <span class="text-center">02</span>
-    </div>
-    <div
-      class="col-span-2 row-span-2 bg-cover bg-bottom"
-      style="background-image: url('/_nuxt/assets/roger-back.jpg')"
-    >
-      03
-    </div>
-  </div>
+    <li v-for="file in files" :key="file.source" class="relative">
+      <div
+        class="group aspect-w-10 aspect-h-7 block w-full lg:rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+      >
+        <img
+          :src="file.source"
+          alt=""
+          class="pointer-events-none object-cover group-hover:opacity-75"
+        />
+        <button type="button" class="absolute inset-0 focus:outline-none">
+          <span class="sr-only">View details for {{ file.title }}</span>
+        </button>
+      </div>
+    </li>
+  </ul>
 </template>
 
-<script setup lang="ts"></script>
-
-<style scoped></style>
+<script setup>
+const files = [
+  {
+    title: "IMG_4985.HEIC",
+    size: "3.9 MB",
+    source:
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+  },
+  {
+    title: "IMG_4985.HEIC",
+    size: "3.9 MB",
+    source:
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+  },
+  {
+    title: "IMG_4985.HEIC",
+    size: "3.9 MB",
+    source:
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+  },
+  {
+    title: "IMG_4985.HEIC",
+    size: "3.9 MB",
+    source:
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+  },
+  {
+    title: "IMG_4985.HEIC",
+    size: "3.9 MB",
+    source:
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+  },
+  {
+    title: "IMG_4985.HEIC",
+    size: "3.9 MB",
+    source:
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+  },
+  {
+    title: "IMG_4985.HEIC",
+    size: "3.9 MB",
+    source:
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+  },
+  {
+    title: "IMG_4985.HEIC",
+    size: "3.9 MB",
+    source:
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+  },
+];
+</script>

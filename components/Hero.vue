@@ -5,7 +5,7 @@
         autoplay
         loop
         muted
-        class="hidden lg:block min-w-[100vw] min-h-screen opacity-40"
+        class="hidden lg:block min-w-[100vw] min-h-full opacity-40"
       >
         <source src="@/assets/vid.webm" type="video/webm" />
       </video>

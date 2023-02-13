@@ -1,9 +1,15 @@
 <template>
   <div class="flex flex-col">
     <Hero :videoBG="true" class="" />
-    <TripleCard />
-    <div class="max-h-72 bg-transparent"></div>
-    <div class="w-screen h-screen bg-white">
+    <div
+      class="flex flex-col space-y-8 lg:flex-row max-w-screen justify-around lg:space-y-0 my-8"
+    >
+      <TripleCard />
+      <TripleCard />
+      <TripleCard />
+      <TripleCard />
+    </div>
+    <div class="w-full max-h-screen py-8 bg-white overflow-y-scroll">
       <CallToAction />
     </div>
   </div>

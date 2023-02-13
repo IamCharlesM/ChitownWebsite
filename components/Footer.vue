@@ -1,19 +1,19 @@
 <template>
-  <footer class="bg-white">
+  <footer class="bg-red-600">
     <div class="mx-auto max-w-7xl overflow-hidden py-12 px-6 lg:px-8">
       <nav
         class="-mx-5 -my-2 flex flex-wrap justify-center"
         aria-label="Footer"
       >
         <div v-for="item in navigation.main" :key="item.name" class="px-5 py-2">
-          <a
-            :href="item.href"
-            class="text-base text-gray-500 hover:text-gray-900"
-            >{{ item.name }}</a
+          <NuxtLink
+            :to="item.href"
+            class="text-white hover: hover:border-b-2 border-white"
+            >{{ item.name }}</NuxtLink
           >
         </div>
       </nav>
-      <div class="mt-8 flex justify-center space-x-6">
+      <!-- <div class="mt-8 flex justify-center space-x-6">
         <a
           v-for="item in navigation.social"
           :key="item.name"
@@ -23,9 +23,9 @@
           <span class="sr-only">{{ item.name }}</span>
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
         </a>
-      </div>
-      <p class="mt-8 text-center text-base text-gray-400">
-        &copy; 2020 Your Company, Inc. All rights reserved.
+      </div> -->
+      <p class="mt-8 text-center text-white">
+        &copy; 2023 Chitown Champions. All rights reserved.
       </p>
     </div>
   </footer>
@@ -36,7 +36,7 @@ import { defineComponent, h } from "vue";
 
 const navigation = {
   main: [
-    { name: "home", href: "/", current: true },
+    { name: "Home", href: "/", current: true },
     { name: "Mission", href: "/mission", current: false },
     { name: "Contact Us", href: "/contact", current: false },
     { name: "Schedule", href: "#", current: false },

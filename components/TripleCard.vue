@@ -1,18 +1,25 @@
 <template>
   <div
-    class="flex flex-col lg:flex-row space-y-4 md:space-y-0 justify-evenly max-w-7xl md:space-x-4 mx-auto my-5 text-white"
+    class="hero h-96 lg:w-96 lg:rounded-xl"
+    style="background-image: url(_nuxt/assets/roger-back.jpg)"
   >
-    <div class="card w-96 bg-white shadow-md image-full">
-      <figure>
-        <img src="@/assets/roger-back.jpg" alt="Shoes" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Buy Now</button>
-        </div>
+    <div class="hero-overlay bg-opacity-60 hover:bg-opacity-20"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <H1TitleBodyButton
+          :button-text="'test'"
+          :buttonClass="'disabled text-6xl cursor-default font-bold font-upper-case drop-shadow-2xl'"
+        />
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.hero {
+  border-radius: 0.75rem !important;
+}
+.hero-overlay {
+  border-radius: 0.75rem !important;
+}
+</style>
