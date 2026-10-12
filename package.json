@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs",
+    "dev": "node api.js && nuxi dev",
+    "build": "node api.js && nuxi build",
+    "start": "node api.js && node .output/server/index.mjs",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "storybook": "start-storybook -p 6006",
