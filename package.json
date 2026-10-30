@@ -1,13 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "dev": "node api.js && nuxi dev",
-    "build": "node api.js && nuxi build",
-    "start": "node api.js && node .output/server/index.mjs",
+    "dev": "node init && nuxi dev",
+    "build": "node init && nuxi build",
+    "start": "node init && node .output/server/index.mjs",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "node init && build-storybook",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
